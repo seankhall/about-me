@@ -1,5 +1,23 @@
 'use strict';
 
+function yesNo(answer) {
+  return answer;
+}
+
+var answer = prompt('My favorite language is C#').toLocaleLowerCase();
+
+yesNo();
+
+if (answer === 'y') {
+  alert('You are right!');
+  point++;
+}
+
+else if (answer === 'n') {
+  alert('Nope it is C#');
+}
+
+
 var point = 0;
 
 var me = prompt('Hello! Is my name Sean?');
@@ -10,6 +28,7 @@ me = me.startsWith('y');
 if( me === true){
   alert('Congradulations!');
   console.log(me);
+  point++;
 }
 else{
   alert('Wrongo Bucko!');
@@ -24,6 +43,7 @@ hero = hero.startsWith('n');
 if( hero === true){
   alert('Good Job! You must\'ve known it\'s Batman.');
   console.log(hero);
+  point ++;
 }
 else{
   alert('You fool! It\'s obviously Batman.');
@@ -38,6 +58,7 @@ age = age.startsWith('y');
 if ( age === true){
   alert('That\'s right! It was the good ol\' Adam West show.');
   console.log(age);
+  point ++;
 }
 else{
   alert('What!? I thought that would just be a given. Oh well, on to the next question.');
@@ -52,6 +73,7 @@ movie = movie.startsWith('n');
 if(movie === false){
   alert('Ding ding! Once in IMAX, another in a drive-in and the rest in regular theaters.');
   console.log(movie); 
+  point++;
 }
 else{
   alert('You must\'ve thought I had seen it like 50 times or something! I wanted to but I was only a teenager with no job at the time.');
@@ -66,24 +88,26 @@ batman = batman.startsWith('n');
 if(batman === true){
   alert('Correct! But mark my words, one day I will be!');
   console.log(batman);
+  point++;
 }
 else{
   alert('D\'awh, you\'re too kind!');
   console.log(batman);
 }
 
-//Goal: Question to ask four times have a 'correct', 'wrong' and 'finally wrong' responses.
+//Question 6
 var bone = prompt('Random question, how many different bones have I broken in my life time?');
-var i = 1;
-while (i <= 1){
-  bone += '<br>The number is ' + i;
-  i++;
-  console.log(bone);
-  point++;
-}
-for (var attempt = 1; attempt <= 4; attempt++){
 
+while (bone !== '0') {
+  bone = prompt('Random question, how many different bones have I broken in my life time?');
+  console.log(bone);
 }
+  if (bone === '0');
+  alert('Correct!');
+  console.log(bone);
+point++;
+
+//Question 7
 
 var islandGuess = false;
 var numIslandGuesses = 1;
@@ -93,3 +117,33 @@ while (islandGuess === false && numIslandGuesses <= 7){
   if (numIslandGuesses === 4){islandGuess = true;}
   numIslandGuesses++;
 }
+
+var superHeroes = ['superman' , 'batman' , 'robin'];
+var superGuess = false;
+var numSuperGuess = 1;
+
+while (superGuess === false && numSuperGuess <= 7) {
+  var guessHero = prompt('Guess my favorite superhero');
+
+  for (var i = 0; i < superHeroes.length; i++) {
+
+    if (guessHero.toLowerCase() === superHeroes[i]) {
+      alert('Good for you!');
+      point++;
+      console.log('Correct superhero guess');
+      superGuess = true;
+      point++;
+      break;
+    }
+
+  }
+
+  if (!superGuess) {
+    alert('Thats not one of my favorites. Try again (upto 6 more)');
+    console.log('never guessed correctly');
+  }
+
+  numSuperGuess++;
+}
+
+alert('You got ' + point + ' questions right!');
