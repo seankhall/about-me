@@ -25,4 +25,10 @@ p{
 footer{
     font-size: 35px;
     text-align: center;
+    font-weight: bold;
+}
+
+li {
+    font-size: 30px;
+    text-align: center;
 }
