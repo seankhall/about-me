@@ -1,79 +1,95 @@
 'use strict';
 
-// var me = prompt('Hello! Is my name Sean?');
+var point = 0;
 
-// me = me.toLowerCase();
-// me = me.startsWith('y');
+var me = prompt('Hello! Is my name Sean?');
 
-// if( me === true){
-//   alert('Congradulations!');
-//   console.log(me);
-// }
-// else{
-//   alert('Wrongo Bucko!');
-//   console.log(me);
-// }
+me = me.toLowerCase();
+me = me.startsWith('y');
 
-// var hero = prompt('Is Spider-man my favorite superhero?');
+if( me === true){
+  alert('Congradulations!');
+  console.log(me);
+}
+else{
+  alert('Wrongo Bucko!');
+  console.log(me);
+}
 
-// hero = hero.toLowerCase();
-// hero = hero.startsWith('n');
+var hero = prompt('Is Spider-man my favorite superhero?');
 
-// if( hero === true){
-//   alert('Good Job! You must\'ve known it\'s Batman.');
-//   console.log(hero);
-// }
-// else{
-//   alert('You fool! It\'s obviously Batman.');
-//   console.log(hero);
-// }
+hero = hero.toLowerCase();
+hero = hero.startsWith('n');
 
-// var age = prompt('Do you think I was exposed to Batman at the age of 1?');
+if( hero === true){
+  alert('Good Job! You must\'ve known it\'s Batman.');
+  console.log(hero);
+}
+else{
+  alert('You fool! It\'s obviously Batman.');
+  console.log(hero);
+}
 
-// age = age.toLowerCase();
-// age = age.startsWith('y');
+var age = prompt('Do you think I was exposed to Batman at the age of 1?');
 
-// if ( age === true){
-//   alert('That\'s right! It was the good ol\' Adam West show.');
-//   console.log(age);
-// }
-// else{
-//   alert('What!? I thought that would just be a given. Oh well, on to the next question.');
-//   console.log(age);
-// }
+age = age.toLowerCase();
+age = age.startsWith('y');
 
-// var movie = prompt('Is it true that I saw The Dark Knight a total of seven times in the theaters?');
+if ( age === true){
+  alert('That\'s right! It was the good ol\' Adam West show.');
+  console.log(age);
+}
+else{
+  alert('What!? I thought that would just be a given. Oh well, on to the next question.');
+  console.log(age);
+}
 
-// movie = movie.toLowerCase();
-// movie = movie.startsWith('n');
+var movie = prompt('Is it true that I saw The Dark Knight a total of seven times in the theaters?');
 
-// if(movie === false){
-//   alert('Ding ding! Once in IMAX, another in a drive-in and the rest in regular theaters.');
-//   console.log(movie); 
-// }
-// else{
-//   alert('You must\'ve thought I had seen it like 50 times or something! I wanted to but I was only a teenager with no job at the time.');
-//   console.log(movie);
-// }
+movie = movie.toLowerCase();
+movie = movie.startsWith('n');
 
-// var batman = prompt('Am I Batman?');
+if(movie === false){
+  alert('Ding ding! Once in IMAX, another in a drive-in and the rest in regular theaters.');
+  console.log(movie); 
+}
+else{
+  alert('You must\'ve thought I had seen it like 50 times or something! I wanted to but I was only a teenager with no job at the time.');
+  console.log(movie);
+}
 
-// batman = batman.toLowerCase();
-// batman = batman.startsWith('n');
+var batman = prompt('Am I Batman?');
 
-// if(batman === true){
-//   alert('Correct! But mark my words, one day I will be!');
-//   console.log(batman);
-// }
-// else{
-//   alert('D\'awh, you\'re too kind!');
-//   console.log(batman);
-// }
+batman = batman.toLowerCase();
+batman = batman.startsWith('n');
 
+if(batman === true){
+  alert('Correct! But mark my words, one day I will be!');
+  console.log(batman);
+}
+else{
+  alert('D\'awh, you\'re too kind!');
+  console.log(batman);
+}
+
+//Goal: Question to ask four times have a 'correct', 'wrong' and 'finally wrong' responses.
 var bone = prompt('Random question, how many different bones have I broken in my life time?');
 var i = 1;
 while (i <= 1){
   bone += '<br>The number is ' + i;
   i++;
   console.log(bone);
+  point++;
+}
+for (var attempt = 1; attempt <= 4; attempt++){
+
+}
+
+var islandGuess = false;
+var numIslandGuesses = 1;
+
+while (islandGuess === false && numIslandGuesses <= 7){
+  console.log('hi', numIslandGuesses);
+  if (numIslandGuesses === 4){islandGuess = true;}
+  numIslandGuesses++;
 }
