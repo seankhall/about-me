@@ -1,0 +1,34 @@
+#rcorners{
+    border-radius: 30px;
+    border: 10px solid black;
+    padding: 30px;
+    width: auto;
+    height: 90px;
+    background-color: darkgreen;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+}
+
+footer{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+li {
+    font-size: 30px;
+    text-align: center;
+}
