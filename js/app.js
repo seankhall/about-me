@@ -1,21 +1,21 @@
 'use strict';
 
-function yesNo(answer) {
-  return answer;
-}
+// function yesNo(answer) {
+//   return answer;
+// }
 
-var answer = prompt('My favorite language is C#').toLocaleLowerCase();
+// var answer = prompt('My favorite language is C#').toLocaleLowerCase();
 
-yesNo();
+// yesNo();
 
-if (answer === 'y') {
-  alert('You are right!');
-  point++;
-}
+// if (answer === 'y') {
+//   alert('You are right!');
+//   point++;
+// }
 
-else if (answer === 'n') {
-  alert('Nope it is C#');
-}
+// else if (answer === 'n') {
+//   alert('Nope it is C#');
+// }
 
 
 var point = 0;
@@ -102,33 +102,24 @@ while (bone !== '0') {
   bone = prompt('Random question, how many different bones have I broken in my life time?');
   console.log(bone);
 }
-  if (bone === '0');
-  alert('Correct!');
-  console.log(bone);
+if (bone === '0');
+alert('Correct!');
+console.log(bone);
 point++;
 
 //Question 7
 
-var islandGuess = false;
-var numIslandGuesses = 1;
-
-while (islandGuess === false && numIslandGuesses <= 7){
-  console.log('hi', numIslandGuesses);
-  if (numIslandGuesses === 4){islandGuess = true;}
-  numIslandGuesses++;
-}
-
-var superHeroes = ['superman' , 'batman' , 'robin'];
+var superHeroes = ['superman' , 'swampthing' , 'nightwing' , 'thor' , 'wolverine' , 'flash' , 'wonderwoman'];
 var superGuess = false;
 var numSuperGuess = 1;
 
 while (superGuess === false && numSuperGuess <= 7) {
-  var guessHero = prompt('Guess my favorite superhero');
+  var guessHero = prompt('Besides, Batman, guess one of my top seven superheros?');
 
   for (var i = 0; i < superHeroes.length; i++) {
 
     if (guessHero.toLowerCase() === superHeroes[i]) {
-      alert('Good for you!');
+      alert('Damn skippy! You got one! The top eight in order are Batman, Swampthing, Superman, Wonderwoman, Wolverine, Nightwing, Flash and Thor.');
       point++;
       console.log('Correct superhero guess');
       superGuess = true;
@@ -139,11 +130,11 @@ while (superGuess === false && numSuperGuess <= 7) {
   }
 
   if (!superGuess) {
-    alert('Thats not one of my favorites. Try again (upto 6 more)');
+    alert('That doesn\'t make my top seven! Try again! (up to 6 more times)');
     console.log('never guessed correctly');
   }
 
   numSuperGuess++;
 }
 
-alert('You got ' + point + ' questions right!');
+alert('You got ' + point + ' questions right out of 7!');
