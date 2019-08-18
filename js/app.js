@@ -1,23 +1,5 @@
 'use strict';
 
-// function yesNo(answer) {
-//   return answer;
-// }
-
-// var answer = prompt('My favorite language is C#').toLocaleLowerCase();
-
-// yesNo();
-
-// if (answer === 'y') {
-//   alert('You are right!');
-//   point++;
-// }
-
-// else if (answer === 'n') {
-//   alert('Nope it is C#');
-// }
-
-
 var point = 0;
 
 var me = prompt('Hello! Is my name Sean?');

@@ -1,36 +1,35 @@
-#rcorners{
+* {
+    margin: 30px;
+}
+
+#header{
     border-radius: 30px;
     border: 10px solid black;
     padding: 30px;
     width: auto;
     height: 90px;
     background-color: darkgreen;
+    font-size: 75px;
 }
 
-h1{
-    font-size: 100px;
-    text-align: center;
+#h2{
+    font-size: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
 }
 
-h2{
-    font-size: 60px;
-    text-align: center;
-}
-
-p{
+#text{
     font-size: 30px;
-    text-align: center;
 }
 
-footer{
+#footer{
     font-size: 35px;
-    text-align: center;
     font-weight: bold;
 }
 
 li {
     font-size: 30px;
-    text-align: center;
 }
 
 img {
@@ -40,4 +39,10 @@ img {
 
 body {
     background-color: gray;
+}
+
+.center {
+    width: 1100px;
+    text-align: center;
+    margin: 0 auto;
 }
